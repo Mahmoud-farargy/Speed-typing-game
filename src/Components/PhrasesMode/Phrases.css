@@ -1,0 +1,38 @@
+.phraseStyle{
+    margin-bottom:25px;
+    font-size:1.7em;
+    font-weight: 300;
+}
+.phraseTextarea{
+    text-align:left;
+    resize:none;
+    height: 8rem !important;
+    padding: .5rem;
+    margin:auto;
+    width:100%;
+    outline:none;
+    border: 2px solid rgb(31, 61, 82);
+}
+.phraseTextarea:focus{
+    border:2px solid black;
+}
+.correct{
+    color:rgb(173, 255, 47);
+}
+.incorrect{
+    color:rgb(173, 70, 70);
+    text-decoration:underline;
+}
+@media only screen and (max-width:600px){
+    .phraseStyle{
+        font-size:20px;
+        margin-bottom:20px;
+    }
+}
+
+@media (min-width:900px) and (max-width:600px){
+    .phraseStyle{
+        font-size:24px;
+        margin-bottom:20px;
+    }
+}

@@ -1,0 +1,19 @@
+.header{
+    z-index:999;
+    text-align:center;
+    padding:10px 0;
+    color:#fff;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+.header h2{
+    font-weight:700;
+    font-size:25px;
+}
+@font-face {
+    font-family: "Digital";
+    src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+    src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff") format("woff"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7") format("svg");
+}
+/* i.fa-weebly{
+    filter: drop-shadow(rgba(255, 255, 255, 0.4) 0px 0px 10px);
+} */
