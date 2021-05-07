@@ -1,5 +1,5 @@
 import React from "react";
-import Aux from "../HOC/Aux";
+import Auxiliary from "../HOC/Auxiliary";
 import Phrase from "./Phrase";
 import "./Phrases.css";
 
@@ -21,7 +21,7 @@ const PhrasesMode =(props)=>{
         }
         
         return(
-            <Aux>
+            <Auxiliary>
                 { props.lang === "English"
                 ?
                 <div className="gameContainer">
@@ -47,7 +47,7 @@ const PhrasesMode =(props)=>{
                     </div>
                 </div> : null
                 } 
-            </Aux>
+            </Auxiliary>
         )
 };
 

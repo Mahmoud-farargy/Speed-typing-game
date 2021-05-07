@@ -46,7 +46,7 @@ const Result = (props)=>{
                 
                 <button onClick={()=> props.restart()} className="tryAgainBtn btn btn-light">حاول مجددا</button>
             </div>
-            : props.mode ==="Phrases" ||  props.mode ==="جمل"  && props.lang === "عربى" ? //Phrases - Arabic
+            : (props.mode ==="Phrases" ||  props.mode ==="جمل")  && props.lang === "عربى" ? //Phrases - Arabic
             <div className="gameContainer">
                 <h3>النتيجة</h3>
                 <h5 className="instructionsTitle"> لقد استغرقت <span 

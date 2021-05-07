@@ -1,5 +1,5 @@
 import React from "react";
-import Aux from "../HOC/Aux";
+import Auxiliary from "../HOC/Auxiliary";
 import Word from "../Word/Word";
 
 const WordMode = (props)=>{
@@ -10,7 +10,7 @@ const WordMode = (props)=>{
     //    window.location.reload();
     // }
     return(
-        <Aux>
+        <Auxiliary>
         { props.lang === "English" ?
             <div className="gameContainer">
                 <h2><span role="img" aria-label="emoji">👩‍</span> <span role="img" aria-label="emoji"> 💻 </span> WordBeater <span role="img" aria-label="emoji">👨‍</span> <span role="img" aria-label="emoji"> 💻 </span></h2>
@@ -37,7 +37,7 @@ const WordMode = (props)=>{
             </div>
             : null
             }
-        </Aux>
+        </Auxiliary>
     )
 }
 

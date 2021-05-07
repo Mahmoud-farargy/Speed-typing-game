@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Switch, withRouter, Redirect} from "react-router-d
 
 
 //Import Components
-import Aux from "./Components/HOC/Aux";
+import Auxiliary from "./Components/HOC/Auxiliary";
 import Header from './Components/Header/Header';
 import WordsMode from "./Components/WordsMode/WordsMode";
 import englishWordList from "./englishWordList.json";
@@ -306,6 +306,7 @@ class MainApp extends Component{
                     enteredValue:"",
                     currentPhrase: "",
                     quoteAuthor: "",
+                    cancelGame: false,
             }); 
         }
     }
@@ -332,7 +333,7 @@ class MainApp extends Component{
     }
     render(){
         return(
-            <Aux>
+            <Auxiliary>
                 <Header blink={this.state.isGameRunning}></Header>
                 {this.state.isGameRunning ?  <Redirect to="/words" /> : <Redirect to="/" />}
                 {this.state.cancelGame && !this.state.isGameRunning ? <Redirect to="/" /> : null}
@@ -403,7 +404,7 @@ class MainApp extends Component{
 
                     {!this.state.isGameRunning ?<button  className="settingsBtn" onClick={()=> this.onSettingsClick()}><i className="fas fa-cog"></i></button> :null}
                 </main>
-            </Aux>
+            </Auxiliary>
         ) 
     }
     
